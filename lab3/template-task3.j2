@@ -1,0 +1,6 @@
+{% for n in range(10) %}
+interface GigabitEthernet0/{{ n+1 }}
+ description Server Port
+ switchport access vlan 10
+ switchport mode access
+{% endfor %}
